@@ -23,3 +23,7 @@ def won?(board)
  end
  return nil
 end
+
+def full?(board)
+!(board.any? { |i| "" || " " })
+end

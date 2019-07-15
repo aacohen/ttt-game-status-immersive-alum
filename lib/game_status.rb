@@ -40,3 +40,8 @@ end
 def over?(board)
 won?(board) || full?(board) || draw?(board)
 end
+
+def winner(board)
+  winning_combo = won?(board)
+  return winning_combo[0]
+end
